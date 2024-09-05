@@ -1,5 +1,13 @@
+Date: 23-08-2024
 Error:  Invalid schema configuration: `User` is not a valid type at path `ref
 Spend Time around 45min in debugging the error while working on middlewares and routes
 for message sending and receiving. 
 And plot twist there was just a typo(typing error)
 Learned: try to check the related files as given in error in compiler
+
+
+
+Date: 24-08-2024
+Error: not getting BG image on backgraund
+Spend 10-15min figuring out.
+Learned: Try to seek for the given relative path is correct.
