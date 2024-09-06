@@ -1,6 +1,5 @@
 Date: 23-08-2024
-Error:  Invalid schema configuration: `User` is not a valid type at path `ref
-Spend Time around 45min in debugging the error while working on middlewares and routes
+Error:  Invalid schema configuration: `User` is not a valid type at path `ref Spend Time around 45min in debugging the error while working on middlewares and routes
 for message sending and receiving. 
 And plot twist there was just a typo(typing error)
 Learned: try to check the related files as given in error in compiler
@@ -11,3 +10,27 @@ Date: 24-08-2024
 Error: not getting BG image on backgraund
 Spend 10-15min figuring out.
 Learned: Try to seek for the given relative path is correct.
+
+Date: 05-09-2024
+
+
+Date: 06-09-2024
+Today faced so many errors and recoved. Invested more than 7 hours. 
+Covered 1hour of video
+
+Error 1 : I have not added '/api' properly in vite.config.js, 
+causing no integration between frontend and backend
+
+Error 2 : While fetching values for conversation, I was just selecting usename and that's why for very long time could not identify why my conversation object has only username and not all other parameters like fullname, profilePic
+
+Error 3 : Many times I used toast without importing in the curr file leading to undefined behavior. So, next time keep track of all importing should be done correctly
+
+Error 4 : Image generating API failed, I don't know why, But it was developed in Iran ig, because the url itself contains name Iran. So, replaced that with another API. Future scope develop update profilepic funtion.
+
+Error 5 : using function call instead of object inside onchange={}, was giving undefined value.
+When I used onChange={handleSubmit} instead of onChange={handleSubmit()} then it gave proper result. It is high level theory as per now for me. I will learn about it more.
+
+Error 6 : Typo in AuthContext lead to 15min+ to debugg.
+
+Error 7 : Tried to fetch dynamic url without using ``(backticks), lead to delay.
+Error 8 : I tried to write my own function for password handling, in main sign up user data I didn't returned true even after all check passed. And this lead to not successful userdata handled so function was returning without passing the data.  (!success)return;
