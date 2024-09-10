@@ -45,3 +45,6 @@ Error 3 : unexpected JSON errors, not consistenly. Could not identify exact orig
 Solution: After addition of socket functionality, it does not working properly. So match the files which contains socket keyword in it.
 
 1) gh: getMessages, Ishita: getMessage. in backend/controllers/message.controller.js, but this is not an issue.
+
+Date 10-09-2024
+Error 1 : After making both frontend and backend running on the same port. I was trying fetch 5000 port. But I was still using 5000 port for backend running. And that was giving error. After reading the error msg in compiler and understanding it with the help of chatgpt. I got that I was using backend on 5000 port that's why 5000 was not available for me for the aplication.
