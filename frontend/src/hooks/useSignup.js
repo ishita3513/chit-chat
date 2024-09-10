@@ -21,7 +21,7 @@ const useSignup=()=>{
             if (data.error) {
 				throw new Error(data.error);
 			}
-            console.log(data);
+            // console.log(data);
             // localStorage
             // context
             localStorage.setItem("chat-user",JSON.stringify(data));
@@ -41,6 +41,10 @@ function handleInputErrors({fullName,username,password,confirmPassword,gender}){
     // console.log("I reached to handle errors function")
     if(!fullName || !username || !password || !confirmPassword || !gender){
         toast.error('Please fill in all fields');
+        return false;
+    }
+    if(fullName.length<3){
+        toast.error('Please give fullname of atleat 3 length!');
         return false;
     }
     if(!PasswordValidation(password))return false;

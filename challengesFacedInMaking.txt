@@ -34,3 +34,14 @@ Error 6 : Typo in AuthContext lead to 15min+ to debugg.
 
 Error 7 : Tried to fetch dynamic url without using ``(backticks), lead to delay.
 Error 8 : I tried to write my own function for password handling, in main sign up user data I didn't returned true even after all check passed. And this lead to not successful userdata handled so function was returning without passing the data.  (!success)return;
+
+Date: 07-09-2024
+
+Error 1 : An user came online=> status updated as online. It logged out, still showing online green mark. There was a typo in {disconnect} method, I typed `disconnet` instead of `disconnect`
+Error 2 : new meggase shake functionality not working even after adding the functionality.
+
+Error 3 : unexpected JSON errors, not consistenly. Could not identify exact origin point of this error
+
+Solution: After addition of socket functionality, it does not working properly. So match the files which contains socket keyword in it.
+
+1) gh: getMessages, Ishita: getMessage. in backend/controllers/message.controller.js, but this is not an issue.
