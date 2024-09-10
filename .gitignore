@@ -25,3 +25,4 @@ dist-ssr
 
 # extra files
 challengesFacedInMaking.txt
+.env
